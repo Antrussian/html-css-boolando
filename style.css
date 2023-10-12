@@ -75,10 +75,95 @@ li {
     background-color: rgb(255, 106, 0);
 }
 
+.background-white {
+    background-color: rgb(248, 248, 248);
+}
+
 .text-white {
     color: white;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  
+    
+}
 
 
+.container-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 30px 100px 30px 100px;
+    
+}
+
+.container-card {
+    display: flex;
+    width: calc(100%/3);
+    height: 400px;
+    background-color: aliceblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container-img {
+    display: flex;
+    width:100%;
+    height: 85%;
+    background-color: aquamarine;
+}
+
+.container-info {
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(248, 248, 248);
+}
+
+.img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    height: 200px;
+}
+
+.info-card {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.titolo-prod {
+    display: flex;
+}
+
+.brand {
+    display: flex;
+}
+
+.prezzo-promo {
+    display: flex;
+}
+
+.prezzo-barrato {
+    display: flex;
+}
+
+.sconto {
+    
+}
+
+.sostenibilita {
+    
+}
+
+.icon-favorite {
+
+}
 
