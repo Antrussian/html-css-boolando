@@ -12,6 +12,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
+    
 }
 
 .container-header {
@@ -22,6 +23,9 @@ header {
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid rgb(194, 194, 194);
+    position: fixed;
+    padding-top: 5px;
+    z-index: 99;
 }
 
 .direction-row {
@@ -97,22 +101,26 @@ main {
     flex-direction: row;
     width: 100%;
     padding: 30px 100px 30px 100px;
+    position: relative;
     
 }
 
 .container-card {
+padding: 40px 50px 5px 50px ;
     display: flex;
-    width: calc(100%/3);
-    height: 400px;
-    background-color: aliceblue;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 500px;
+    height: 550px;
+   
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    justify-content: center;
 }
 .container-img {
     display: flex;
     width:100%;
     height: 85%;
-    background-color: aquamarine;
+    position: relative;
 }
 
 .container-info {
@@ -120,17 +128,28 @@ main {
     width: 100%;
     height: 15%;
     background-color: rgb(248, 248, 248);
+    
 }
 
 .img{
-    display: flex;
+    display: block;
     width: 100%;
     height: 100%;
 }
 
+.img-hover {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 .card {
     display: flex;
     height: 200px;
+    width: 500px;
 }
 
 .info-card {
@@ -149,21 +168,126 @@ main {
 
 .prezzo-promo {
     display: flex;
+    color: red;
 }
 
 .prezzo-barrato {
     display: flex;
+    margin-left: 5px;
+    
 }
 
 .sconto {
+    position: absolute;
+    left: 0px;
+    bottom:40px;
+    background-color: red;
+    color: white;
+    width: 45px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+
     
 }
 
 .sostenibilita {
+    position: absolute;
+    bottom: 0px;
+    top: 73%;
+    background-color: rgb(11, 166, 0);
+    color: white;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    left: 50px;
     
 }
 
+
+
+
+
 .icon-favorite {
+position: absolute;
+background-color: rgb(183, 0, 0);
+border-radius: 50%;
+height: 25px;
+width: 25px;
+color: rgb(242, 242, 242);
+align-items: center;
+text-align: center;
+top: 10px;
+left: 90%;
+bottom: 0;
+z-index: 98;
+display: block;
 
 }
 
+.icon-favorite-hover {
+position: absolute;
+background-color: rgb(242, 242, 242);
+border-radius: 50%;
+height: 25px;
+width: 25px;
+color: rgb(114, 0, 0);
+align-items: center;
+text-align: center;
+top: 10px;
+left: 90%;
+bottom: 0;
+z-index: 98;
+display: none;
+}
+
+
+.icon-favorite:hover  .icon-favorite {
+    display: none;
+}
+
+.container-img:hover .icon-favorite-hover {
+    display: block;
+}
+
+
+
+
+
+
+
+.container-favorite {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container-img:hover .img {
+display: none;
+}
+
+.container-img:hover .img-hover {
+display: block;
+}
+
+
+
+
+.container-prezzo {
+    display: flex;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 30px 40px 40px 120px;
+    font-size: 15px;
+}
